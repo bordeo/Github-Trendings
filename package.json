@@ -1,0 +1,25 @@
+{
+  "name": "trending-repo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "flow-bin": "^0.75.0",
+    "github-api": "^3.0.0",
+    "graphql-fetch": "^1.0.1",
+    "lodash": "^4.17.10",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-plugin-react-app": "^3.0.0",
+    "prettier": "^1.13.7"
+  }
+}
