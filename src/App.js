@@ -61,7 +61,7 @@ class App extends Component {
 
 	renderLanguagesOption = (language, i) => {
 		return (
-			<option key="i" value={language}>
+			<option key={i} value={language}>
 				{language}
 			</option>
 		);
