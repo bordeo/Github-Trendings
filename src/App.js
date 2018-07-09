@@ -34,6 +34,10 @@ const periods = [
       .format("YYYY-MM-DD")
   },
   {
+    [label]: "Today",
+    [value]: moment().format("YYYY-MM-DD")
+  },
+  {
     [label]: "7 days",
     [value]: moment()
       .subtract(7, "days")
@@ -76,14 +80,9 @@ class App extends Component {
       this.setState({ loading: false, error: e });
       return;
     }
-    if (!res.ok) {
-      throw Error(res.status + " - " + res.statusText);
-    }
-    const j = await res.json();
-    if (typeof j.errors !== "undefined") {
-      throw Error(j.errors[0].message);
-    }
-    let repos = j.items;
+
+    let repos = res.items;
+    console.log(repos);
     this.setState({ loading: false, repos: repos });
   };
 
